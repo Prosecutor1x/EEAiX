@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Platform.Domain.Enums;
+using Platform.Domain.Entities;
 
 namespace Platform.Application.DTOs.Devices
 {
@@ -21,5 +22,7 @@ namespace Platform.Application.DTOs.Devices
         public DateTime CreatedAt { get; set; }
 
         public DateTime? LastSeenAt { get; set; }
+
+        public DeviceStateResponse? State { get; set; }
     }
 }

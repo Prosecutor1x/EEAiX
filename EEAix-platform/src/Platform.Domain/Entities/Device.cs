@@ -17,4 +17,5 @@ public class Device
     public DateTime CreatedAt { get; set; }
 
     public DateTime? LastSeenAt { get; set; }
+    public DeviceState? State { get; set; }
 }
